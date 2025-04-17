@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import "./hero.css";
 import { useWeatherData } from "./useWeatherData";
-import { getWeatherIcon } from "./weatherIcon";
 
 export default function Hero() {
     const [location, setLocation] = useState("London");
