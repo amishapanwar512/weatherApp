@@ -158,6 +158,7 @@
     color: rgb(16, 29, 67);
   }
 
+
   @media screen and (max-width: 500px){
 
       .search-form input {
@@ -175,8 +176,31 @@
     .search input{
             width: 60px;
    }
-
    .middle p{
-        font-size: 0.9em;
+    font-size: 0.9rem;
    }
+
+   .temp-icon{
+    margin-top: 1.7rem;
+    width: 7rem;
+    height:7rem;
+   }
+
+   .temp-day{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+
+   }
+   .temp p{
+    font-size: 1.5rem;
+   }
+
+   .bottom p{
+    font-size: 0.8rem;
+   }
+   .city p{
+    font-size: 0.7rem;
+    font-weight: 700;
+   }
+
 }
