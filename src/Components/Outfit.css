@@ -1,0 +1,78 @@
+.icon-knit{
+    width: 40px;
+    height: 40px;
+
+}
+
+.icon-cardigan{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.heading{
+    display:flex;
+    color: #7e22ce;
+    justify-content: space-between;
+    gap:1rem;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.heading h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.outfit-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.outfit {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    /* ✨ New additions for glassy white effect */
+    background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* soft white border */
+    backdrop-filter: blur(10px); /* optional: glassy blur */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    width: 60%;
+    max-width: 500px;
+  }
+
+.outfit-main{
+    background: linear-gradient(to bottom, #E8F9FF, #C4D9FF, #C4D9FF);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.cloth-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cloth-description h3{
+    color: #57069f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.cloth-description p{
+    color:#8518e5;
+    font-family: cursive;
+}

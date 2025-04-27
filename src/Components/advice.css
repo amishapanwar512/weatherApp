@@ -1,0 +1,75 @@
+.idea-icon{
+    height:50px;
+    width: 50px;
+}
+
+.umbrella-icon{
+    height:30px;
+    width: 30px;
+}
+
+.advice-main{
+    background: linear-gradient(to bottom,#ACE1AF,#B0EBB4,#E0FBE2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.advice-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.heading-section{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+    font-size: 1.3rem;
+    color:rgb(14, 77, 14);
+}
+.heading-section p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+.advice-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice-container p{
+        color: rgb(31, 104, 31);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        text-align: center;
+}
+
+.advice-footer p{
+    color:rgb(21, 111, 42);
+    font-family: cursive;
+}
+
+.advice-box {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    /* ✨ New additions for glassy white effect */
+    background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* soft white border */
+    backdrop-filter: blur(10px); /* optional: glassy blur */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    width: 60%;
+    max-width: 500px;
+  }

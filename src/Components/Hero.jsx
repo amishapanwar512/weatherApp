@@ -18,8 +18,9 @@ import {
 import "./hero.css";
 import { useWeatherData } from "./useWeatherData";
 
-export default function Hero() {
-    const [location, setLocation] = useState("London");
+
+export default function Hero({ onCityChange }) {
+    const [location, setLocation] = useState("Dehradun");
     const [searchTerm, setSearchTerm] = useState("");
     const { data, loading, error } = useWeatherData(location);
     //Handle search box in smaller screens
@@ -33,6 +34,7 @@ export default function Hero() {
             searchTerm.trim().slice(1).toLowerCase();
 
         setLocation(formatted);
+        onCityChange(formatted);
         setSearchTerm("");
     };
 
@@ -100,8 +102,15 @@ export default function Hero() {
         >
             <div className="top">
                 <div className="logo">
-                    <Rabbit size={36} />
-                    <p>CloudyBuddy</p>
+                    <img src="/icons/cloud.png" alt="logo" className="logo-icon" style={{
+                        height: "40px",
+                        width: "40px",
+                    }}/>
+                    <p style={{
+                        fontSize: "1rem",
+                        fontWeight: "bold",
+                        color: result ? "#000" : "#fff",
+                    }}>CloudyBuddy</p>
                 </div>
                 <div className="city">
                     <MapPinIcon />
