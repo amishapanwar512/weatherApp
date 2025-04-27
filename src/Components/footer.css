@@ -1,0 +1,26 @@
+.footer{
+    background-color:#FF90BB ;
+    color: rgb(52, 33, 33);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p{
+    font-family: cursive;
+    font-size: 0.8rem;
+}
+.footer-content h4{
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.socials a{
+    text-decoration: none;
+    color: rgb(52, 33, 33);
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.socials a:hover{
+    color: rgb(20, 31, 80);
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
     Sun,
     Cloud,
@@ -19,10 +19,18 @@ import "./hero.css";
 import { useWeatherData } from "./useWeatherData";
 
 
-export default function Hero({ onCityChange }) {
+export default function Hero({ onCityChange, onWeatherChange}) {
     const [location, setLocation] = useState("Dehradun");
     const [searchTerm, setSearchTerm] = useState("");
     const { data, loading, error } = useWeatherData(location);
+
+    useEffect(() => {
+        if (data) {
+            const weatherDescription = data.weather?.[0]?.description;
+            onWeatherChange(weatherDescription);
+        }
+    }, [data, onWeatherChange]);
+    
     //Handle search box in smaller screens
     const [showSearch, setShowSearch] = useState(false);
     const handleSearch = (e) => {
